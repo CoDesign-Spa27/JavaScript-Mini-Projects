@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+button{
+    padding:1rem;
+    width: 8rem;
+    border-radius: 20%;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: rgb(20, 30, 220);
+    color: rgb(255, 255, 255);
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
