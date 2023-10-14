@@ -1,0 +1,41 @@
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkslateblue;
+}
+h1{
+    font-size: 3vw;
+    letter-spacing: 5px;
+    color: turquoise;
+    text-shadow: 2px 3px 4px black;
+}
+.container{
+    background-color: darkcyan;
+    height: 45rem;
+    width: 40rem;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+#counter{
+    font-size: 4vw;
+    padding: 2rem;
+}
+.sub-container button{
+    background-color: tomato;
+    border: 0;
+    font-size: 1.2rem;
+    color: aliceblue;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    border-radius: 5%;
+    transition: 0.3s;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+button:hover{
+    transform: translateY(-0.7rem);
+    background-color: rgb(160, 56, 37);
+}
