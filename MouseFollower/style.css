@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Times New Roman', Times, serif;
+    height: 100vh;
+    background-color: #000115;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cursor{
+    z-index: 999;
+    position: fixed;
+    display: none;
+    background: blueviolet;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px blueviolet,0 0 60px blueviolet,
+    0 0 120px blueviolet;
+    animation: colors 5s infinite;
+    transform: translate(-50%,-50%);
+    transition: 0.01s;
+}
+@keyframes colors {
+     
+    0%{
+        filter:hue-rotate(0deg);
+    }
+    100%{
+        filter:hue-rotate(360deg);
+        
+    }
+
+    
+}
+.cursor::before{
+    content: '';
+    position: absolute;
+    background: blueviolet;
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    transform: translate(-30%,-30%);
+    border-radius: 50%;
+
+}
